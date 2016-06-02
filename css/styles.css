@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+ 	background-color: black;
+}
+
+.ad-click {
+	cursor: pointer;
+}
+
+#Billboard_Stage {
+	width: 970px;
+	height: 250px;
+}
+
+#Billboard_Branding, #Billboard_Video { height: 250px; }
+
+#Billboard_Branding {
+	width: 570px;
+	background: black;
+	float: left;
+}
+
+#Billboard_Video {
+	width: 400px;
+}
+
+#Billboard_Controls {
+	width: 30px;
+	height: 250px;
+	top: 0;
+	left: 540px;
+	position: absolute;
+	padding-top: 150px;
+	z-index: 9999999;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+
+.icon {
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	background-repeat: none;
+	background-image: url(spritesheet.png);
+}
+
+.white.audio-stop {
+	background-position: -107px -5px;
+}
+
+.white.audio-start {
+	background-position: -39px -73px;
+}
+
+.white.video-stop {
+	background-position: -39px -5px;
+}
+
+.white.video-start {
+	background-position: -5px -39px;
+}
+
+.white.restart {
+	background-position: -73px -39px;
+}
+
+.black.audio-stop {
+	background-position: -73px -73px;
+}
+
+.black.audio-start {
+	background-position: -5px -73px;
+}
+
+.black.video-stop {
+	background-position: -5px -5px;
+}
+
+.black.video-start {
+	background-position: -73px -5px;
+}
+
+.black.restart {
+	background-position: -39px -39px;
+}

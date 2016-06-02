@@ -25,3 +25,5 @@ node_modules
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 poster.jpg
+branding.jpg
+video.mp4

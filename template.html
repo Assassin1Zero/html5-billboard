@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Billboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+
+    <div class="Billboard_Stage">
+
+        <div id="Billboard_Branding" class="ad-click"></div>
+
+        <video id="Billboard_Video" class="ad-click" preload="auto"></video>
+
+        <div id="Billboard_Controls">
+            <a href="#" class="icon restart hide"></a>
+            <a href="#" class="icon audio"></a>
+            <a href="#" class="icon video"></a>
+        </div>
+
+    </div>
+
+    <script src="main.min.js"></script>
+
+    <script>
+
+        var billboard = AdOps.billboard({
+            branding: 'branding.jpg',
+            media: 'video.mp4',
+            theme: 'black',
+            autoplay: true
+        });
+
+        billboard.init();
+    </script>
+
+</body>
+</html>
+
+<!-- wa54 snu -->
