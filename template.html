@@ -31,9 +31,25 @@
         var billboard = AdOps.billboard({
             branding: 'branding.jpg',
             media: 'video.mp4',
+            poster: '',
             theme: 'black',
             autoplay: true
         });
+
+        billboard.addEvent('ADOPS_BILLBOARD_READY', function() {
+    		//Custom code goes here for ready event
+    		console.log('BILLBOARD READY');
+    	});
+
+    	billboard.addEvent('ADOPS_BILLBOARD_STARTED', function() {
+    		//Custom code goes here for video start e.g 3rd party video counter
+    		console.log('BILLBOARD CONTENT STARTED');
+    	});
+        
+    	billboard.addEvent('ADOPS_BILLBOARD_ENDED', function() {
+    		//Custom code goes here for video end e.g 3rd party video counter
+    		console.log('BILLBOARD CONTENT ENDED');
+    	});
 
         billboard.init();
     </script>
