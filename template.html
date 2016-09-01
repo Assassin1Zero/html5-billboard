@@ -31,7 +31,7 @@
         var billboard = AdOps.billboard({
             branding: 'branding.jpg',
             media: 'video.mp4',
-            poster: '',
+            poster: 'poster.jpg',
             theme: 'black',
             autoplay: true
         });
@@ -45,13 +45,14 @@
     		//Custom code goes here for video start e.g 3rd party video counter
     		console.log('BILLBOARD CONTENT STARTED');
     	});
-        
+
     	billboard.addEvent('ADOPS_BILLBOARD_ENDED', function() {
     		//Custom code goes here for video end e.g 3rd party video counter
     		console.log('BILLBOARD CONTENT ENDED');
     	});
 
         billboard.init();
+
     </script>
 
 </body>
